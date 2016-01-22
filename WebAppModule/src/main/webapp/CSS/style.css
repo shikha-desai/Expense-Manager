@@ -1,0 +1,74 @@
+html 
+{
+
+  	background: -webkit-linear-gradient(black,#440000,#650000,#740000,maroon); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(black,#440000,#650000,#740000,maroon); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(black,#440000,#650000,#740000,maroon); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(black,#440000,#650000,#740000,maroon); /* Standard syntax */
+	
+	font-family: sans-serif,"Lucida Console" ;
+	margin: 0;
+    
+	height: 100%;
+}
+
+#LogoDiv
+{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color: rgba(255,255,255,0.5);
+	height:30%;
+	width:100%;
+	position:fixed;
+	margin-top:1%;
+}
+
+#LogoImage
+{
+	position: absolute;
+	float: left;
+	margin-left: 20%;
+	width:20%;
+	height:100%;
+}
+
+#heading
+{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 50%;
+	letter-spacing:8px;
+	font-size: 60px;
+	font-family: Brush Script MT,cursive;
+}
+
+.wrap {
+	position: fixed;
+	width:250px;
+	height: auto;
+	margin: auto;
+	margin-top: 25%;
+	margin-left: 42%;	
+	font-color: rgb(0,0,0);
+}
+
+.wrap a {
+	border: none;
+	background: rgba(255,255,255,0.8);
+	
+  	font-family:sans-serif,"Lucida Console"  ;
+  	font-weight:700 ;
+  	font-color: rgb(0,0,0);
+	
+	display: block;
+	height: 40px;
+	outline: none;
+	
+	width: 224px;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+	
+	border-radius: 7px 7px 0px 0px ;
+
+	text-align: center;
+}
