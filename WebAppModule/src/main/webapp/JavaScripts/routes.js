@@ -1,24 +1,21 @@
-angular.module('expenseManager')
-.config(function($stateProvider, $urlRouterProvider){
+angular.module('expenseManager',['ngRoute'])
+.config(function($routeProvider) {
 
-	$urlRouterProvider.otherwise('/');
-
-	$stateProvider
-	.state('AddExpenses', {
-		url: '/AddExpenses',
-		templateURL: 'WebPages/AddExpenses.html'
+	$routeProvider
+	.when('/', {
+	templateUrl : './WebPages/Options.html'
 	})
-	.state('ViewExpenses', {
-		url: '/ViewExpenses',
-		templateURL: 'WebPages/ViewExpenses.html'
+	.when('/AddExpenses', {
+	templateUrl : './WebPages/AddExpenses.html'
 	})
-	.state('Options', {
-		url: '/Options',
-		templateURL: 'WebPages/Options.html'
+	.when('/ViewExpenses', {
+	templateUrl : './WebPages/ViewExpenses.html'
 	})
-	.state('Root', {
-		url: '/',
-		templateURL:'index.html'
+	.when('/Options', {
+	templateUrl : './WebPages/Options.html'
 	})
+	.otherwise({
+    redirectTo: '/'
+    });
 
 });

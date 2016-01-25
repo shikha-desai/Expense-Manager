@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
-<html ng-app='expenseManger'>
+<html ng-app="expenseManager">
 
 <head>
 
 	<title>Expense Manager</title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-	<script type="text/javascript" src="JavaScripts/AngularScript.js"></script>
-	<script type="text/javascript" src="JavaScripts/routes.js"></script>
+	<script type="text/javascript" src="./JavaScripts/angular.min.js"></script>
+	<script type="text/javascript" src="./JavaScripts/angular-route.js"></script>
+	
+	<script type="text/javascript" src="./JavaScripts/AngularScript.js"></script>
+	<script type="text/javascript" src="./JavaScripts/routes.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
@@ -22,9 +23,9 @@
 		<h2 id="heading">Expense Manager</h2>
 	</div>
 	
-	<!-- The main content -->
-	<div ui-view></div>
-	
+	<div>
+	<div ng-view></div>
+	</div>
 
 </body>
 
