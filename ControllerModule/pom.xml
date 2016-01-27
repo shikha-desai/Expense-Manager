@@ -12,5 +12,15 @@
   		<artifactId>ServicesModule</artifactId>
   		<version>${project.version}</version>
   	</dependency>
+  	<dependency>
+  		<groupId>${project.groupId}</groupId>
+  		<artifactId>DAOModule</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+		<version>1.3.2.RELEASE</version>
+	</dependency>
   </dependencies>
 </project>

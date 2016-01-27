@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 
 import java.time.Instant;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -65,6 +66,13 @@ public class DAOTests {
 		Category category = new Category("Transport");
 		boolean res = db.deleteCategory(category);
 		assertEquals(res,true);		
+	}
+	
+	@Test
+	public void testGetAllCategories() {
+		DAOClass db = new DAOClass();
+		List<Category> CatList = db.getAllCategories();
+		assertNotNull(CatList);		
 	}
 	
 	@Test

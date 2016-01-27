@@ -44,6 +44,10 @@ public class DBConstants {
 			+ NAME + " varchar(50) UNIQUE"
 			+ ");";
 	
+	//Get all data
+	public static final String SELECT_ALL_FROM_EXPENSE_TABLE = "SELECT * FROM " + EXPENSE_TABLE + ";";
+	public static final String SELECT_ALL_FROM_CATEGORY_TABLE = "SELECT * FROM " + CATEGORY_TABLE + ";";
+	
 	//Delete all rows from table with rollback memory
 	public static final String DELETE_FROM_EXPENSE_TABLE = "DELETE FROM " + EXPENSE_TABLE + ";";
 	public static final String DELETE_FROM_CATEGORY_TABLE = "DELETE FROM " + CATEGORY_TABLE + ";";

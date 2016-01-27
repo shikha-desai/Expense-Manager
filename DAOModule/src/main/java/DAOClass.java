@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class DAOClass {
@@ -204,6 +206,22 @@ public class DAOClass {
 		return true;
 	}
 	
+	List<Category> getAllCategories() {
+		try {
+			stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(DBConstants.SELECT_ALL_FROM_CATEGORY_TABLE);
+			List<Category> CatList = new LinkedList<Category>(); 
+			while(rs.next()) {
+				Category category = new Category(rs.getInt(1), rs.getString(2));
+				CatList.add(category);
+			}
+			return CatList;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
 	
 	boolean insertExpense(Expense expense) {
 		
