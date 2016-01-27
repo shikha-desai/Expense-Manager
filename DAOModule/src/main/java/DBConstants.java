@@ -36,7 +36,8 @@ public class DBConstants {
 			+ CATEGORY_ID + " int, "
 			+ TIMESTAMP + " varchar(25), "
 			+ DESCRIPTION + " varchar(255), "
-			+ AMOUNT_SPENT + " float"
+			+ AMOUNT_SPENT + " float, "
+			+ "FOREIGN KEY (" + CATEGORY_ID + ") REFERENCES " + CATEGORY_TABLE + "(" + ID + ")"
 			+ ");";
 	public static final String CREATE_CATEGORY_TABLE = "CREATE TABLE IF NOT EXISTS " + CATEGORY_TABLE +"("
 			+ ID + " int AUTO_INCREMENT PRIMARY KEY, "

@@ -2,13 +2,13 @@ import java.time.Instant;
 
 public class Expense {
 
-	int id;
+	Integer id;
 	Category category;
 	Instant timestamp;
 	String description;
-	float amountSpent;
+	Float amountSpent;
 	
-	public Expense(int id, Category category, Instant timestamp, String description, float amountSpent) {
+	public Expense(Integer id, Category category, Instant timestamp, String description, Float amountSpent) {
 		super();
 		this.id = id;
 		this.category = category;
@@ -16,7 +16,7 @@ public class Expense {
 		this.description = description;
 		this.amountSpent = amountSpent;
 	}
-	public Expense(Category category, Instant timestamp, String description, float amountSpent) {
+	public Expense(Category category, Instant timestamp, String description, Float amountSpent) {
 		super();
 		this.id = 0;
 		this.category = category;
@@ -28,7 +28,7 @@ public class Expense {
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public Category getCategory() {
@@ -52,7 +52,7 @@ public class Expense {
 	public float getAmountSpent() {
 		return amountSpent;
 	}
-	public void setAmountSpent(float amountSpent) {
+	public void setAmountSpent(Float amountSpent) {
 		this.amountSpent = amountSpent;
 	}
 	

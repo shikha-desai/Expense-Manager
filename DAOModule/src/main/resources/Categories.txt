@@ -1,0 +1,21 @@
+Accessories
+Bank
+Cash
+Charity
+Clothing
+Food & Drinks
+Education
+Entertainment
+Gifts
+Groceries
+Health & Fitness
+Household
+Medical
+Miscellaneous
+Others
+Pets
+Rent
+Tax
+Transport
+Travel
+Utilities
