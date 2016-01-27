@@ -143,12 +143,13 @@ public class DAOClass {
 		try {
 			Stream<String> stream = Files.lines(path);		
 			stream.forEach((String name) -> this.insertCategory(new Category(name)));
+			stream.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return false;
 		}
-		
+	
 		if(stmt != null) {
 			try {
 				stmt.close();
