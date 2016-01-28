@@ -1,23 +1,18 @@
 <div class="wrap">
-	
-	
-	
-	<!--
+
 	<select>
-		<option value="volvo">Volvo</option>
-	  <option value="saab">Saab</option>
-	  <option value="mercedes">Mercedes</option>
-	  <option value="audi">Audi</option>
+		<div ng-repeat="category in categoryCtrl.categories">
+			<option value="{{ category.id }} {{4+6}}"> {{"Hello" + category.name }} </option>
+		</div>
 	</select> 
 		<input type="text" placeholder="Description">
-	
 		<input type="number" placeholder="Amount Spent(Rs)" required>
+		<label>{{categoryCtrl.categories.name}}</label><input type="text">
 		<a href=""><button>Add</button></a>
-	-->
 	
-		<div class="home_page_link">
+	
+	<div class="home_page_link">
 		<a href="#/Options">  Continue to site</a>
-		
-		</div>
-	
+	</div>
+
 </div>
